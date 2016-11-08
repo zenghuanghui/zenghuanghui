@@ -1,4 +1,4 @@
-package com.common;
+package com.jinghui.common.utils;
 
 import java.sql.Timestamp;
 import java.text.DateFormat;

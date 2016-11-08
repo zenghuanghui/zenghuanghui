@@ -1,223 +1,39 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
-"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.library.dao.LibraryBookMapper">
-    <cache />
-	<!-- 用于select查询公用抽取的列 -->
-	<resultMap id="LibraryBookMap"  type="LibraryBook">
-				<result property="id" column="id"/> 
-				<result property="name" column="name"/> 
-				<result property="price" column="price"/> 
-				<result property="author" column="author"/> 
-				<result property="state" column="state"/> 
-				<result property="spare1" column="spare1"/> 
-				<result property="spare2" column="spare2"/> 
-				<result property="spare3" column="spare3"/> 
-  </resultMap>
-	
-	<sql id="selectAll">
-	    <![CDATA[
-      SELECT id ,name ,price ,author ,state ,spare1 ,spare2 ,spare3 
-        FROM library_book 
-	    ]]>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jinghui.dao.UserMapper">
+    <cache/>
+    <!-- 用于select查询公用抽取的列 -->
+    <resultMap id="UserResultMap" type="User">
+        <result property="id" column="id"/>
+        <result property="userName" column="user_name"/>
+        <result property="password" column="password"/>
+        <result property="email" column="email"/>
+        <result property="sex" column="sex"/>
+        <result property="phoneNo" column="phone_no"/>
+        <result property="realName" column="real_name"/>
+        <result property="onlineState" column="online_state"/>
+        <result property="checkCode" column="check_code"/>
+        <result property="phoneCode" column="phone_code"/>
+        <result property="createUser" column="create_user"/>
+        <result property="updateUser" column="update_user"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="state" column="state"/>
+        <result property="type" column="type"/>
+    </resultMap>
+
+    <sql id="allColumn">
+	    id,user_name,password,email,sex,phone_no,real_name,online_state,
+	    check_code,phone_code,create_user,update_user,create_time,update_time,
+	    state,type
 	</sql>
-	
-	<sql id="selectAllLibraryBook">
-	    <![CDATA[
-      SELECT id as id,name as name,price as price,author as author,state as state,spare1 as spare1,spare2 as spare2,spare3 as spare3
-        FROM library_book 
-	    ]]>
-	</sql>
+
     <!-- 查询所有 -->
-    <select id="getLibraryBookList" resultType="LibraryBook">
-  	<include refid="selectAllLibraryBook"/> 
-  </select>
-  <!-- 根据id查询 -->
- <select id="getLibraryBookById" parameterType="string" resultType="LibraryBook">
-    <include refid="selectAllLibraryBook"/>
-<![CDATA[
-  	 WHERE
-	        id=#{id}
-       ]]>    
-  </select>
-  
-  <!-- 条件查询-->
-  <select id="getLibraryBookByCondition" parameterType="map" resultMap="LibraryBookMap">
-      <include refid="selectAll"/>
-      <where>
-                	<if test="id!=null">
-	        					and id=#{id}
-	        					</if>
-                	<if test="name!=null">
-	        					and name=#{name}
-	        					</if>
-                	<if test="price!=null">
-	        					and price=#{price}
-	        					</if>
-                	<if test="author!=null">
-	        					and author=#{author}
-	        					</if>
-                	<if test="state!=null">
-	        					and state=#{state}
-	        					</if>
-                	<if test="spare1!=null">
-	        					and spare1=#{spare1}
-	        					</if>
-                	<if test="spare2!=null">
-	        					and spare2=#{spare2}
-	        					</if>
-                	<if test="spare3!=null">
-	        					and spare3=#{spare3}
-	        					</if>
-	    <if test="condition!=null">
-		            and ${condition}
-		 </if>
-	    </where>
-	    
-  </select>
-  
-  
-<!-- 分页查询-->
-  <select id="pagingSelect" parameterType="map" resultType="LibraryBook">
-      <include refid="selectAllLibraryBook"/>
-      <where>
-                	<if test="id!=null">
-	        					and id=#{id}
-	        					</if>
-                	<if test="name!=null">
-	        					and name=#{name}
-	        					</if>
-                	<if test="price!=null">
-	        					and price=#{price}
-	        					</if>
-                	<if test="author!=null">
-	        					and author=#{author}
-	        					</if>
-                	<if test="state!=null">
-	        					and state=#{state}
-	        					</if>
-                	<if test="spare1!=null">
-	        					and spare1=#{spare1}
-	        					</if>
-                	<if test="spare2!=null">
-	        					and spare2=#{spare2}
-	        					</if>
-                	<if test="spare3!=null">
-	        					and spare3=#{spare3}
-	        					</if>
-	    <if test="condition!=null">
-		            and ${condition}
-		 </if>
-	    </where>
-	    <if test="sortColumns!=null">
-          <![CDATA[
-           order by ${sortColumns}
-          ]]>
-        </if>
-      <if test="pageBegin !=null">
-  	 <![CDATA[   
-  	 limit #{pageBegin},#{pageSize}
-  	 ]]>
-  	 </if>
-  </select>
-  <!-- 新增 -->
-    <insert id="insertLibraryBook" parameterType="LibraryBook">
-    <![CDATA[
-        INSERT INTO library_book (
-        	id,
-        	name,
-        	price,
-        	author,
-        	state,
-        	spare1,
-        	spare2,
-        	spare3
-        ) VALUES (
-        	#{id},
-        	#{name},
-        	#{price},
-        	#{author},
-        	#{state},
-        	#{spare1},
-        	#{spare2},
-        	#{spare3}
-        )
-    ]]>
-    </insert>
-    <!-- 编辑 -->
-    <update id="updateLibraryBook" parameterType="LibraryBook">
-
-        UPDATE library_book 
-        <set>
-        	<if test="name!=null">
-  					name=#{name},
-  				</if>	
-        	<if test="price!=null">
-  					price=#{price},
-  				</if>	
-        	<if test="author!=null">
-  					author=#{author},
-  				</if>	
-        	<if test="state!=null">
-  					state=#{state},
-  				</if>	
-        	<if test="spare1!=null">
-  					spare1=#{spare1},
-  				</if>	
-        	<if test="spare2!=null">
-  					spare2=#{spare2},
-  				</if>	
-        	<if test="spare3!=null">
-  					spare3=#{spare3},
-  				</if>	
-	        </set>
-        WHERE 
-	        id=#{id}
-
-    </update>
-    <!-- 删除-->
-    <delete id="deleteLibraryBookById" parameterType="string">
-    <![CDATA[
-        DELETE FROM library_book WHERE
-        id=#{id}
-    ]]>
-    </delete>
-<!-- 批量删除 -->
-<delete id="batchDelete" parameterType="java.util.List">
-	<![CDATA[
-	delete from  library_book where id in	
-]]>
-<foreach collection="list" item="item" open="(" separator="," close=")">
-	 #{item}
-	</foreach>
-  </delete>
- <!-- 查询总共多少条记录 -->
-   <select id="getCount" resultType="int" parameterType="map">
-        SELECT count(*) FROM library_book   
-        <where>
-                	<if test="name!=null">
-	        					and name=#{name}
-	        					</if>
-                	<if test="price!=null">
-	        					and price=#{price}
-	        					</if>
-                	<if test="author!=null">
-	        					and author=#{author}
-	        					</if>
-                	<if test="state!=null">
-	        					and state=#{state}
-	        					</if>
-                	<if test="spare1!=null">
-	        					and spare1=#{spare1}
-	        					</if>
-                	<if test="spare2!=null">
-	        					and spare2=#{spare2}
-	        					</if>
-                	<if test="spare3!=null">
-	        					and spare3=#{spare3}
-	        					</if>
-	    </where> 
+    <select id="selectUserList" resultMap="UserResultMap">
+        SELECT  <include refid="allColumn"/>
+        FROM  test.user
     </select>
-	
+
 </mapper>
 

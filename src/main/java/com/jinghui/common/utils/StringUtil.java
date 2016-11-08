@@ -1,4 +1,4 @@
-package com.common;
+package com.jinghui.common.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * 字符串公用操作.
- * 
+ *
  * @DateTime: 2011-3-4
  * @author zhouq
  * @version 1.0
@@ -29,7 +29,7 @@ public final class StringUtil
 
     /**
      * 如果对象Null或"null"返回空字符串.
-     * 
+     *
      * @param obj 需要toString的对象
      * @return string 返回非空的字符串
      */
@@ -40,7 +40,7 @@ public final class StringUtil
 
     /**
      * isNum:(判断字符串是否为数字). <br/>
-     * 
+     *
      * @author ZhaoBo
      * @param str
      * @return
@@ -52,7 +52,7 @@ public final class StringUtil
 
     /**
      * strToInt:( 把页面传过来的参数转为INT默认为1 ). <br/>
-     * 
+     *
      * @author ZhaoBo
      * @param request
      * @param str:页面传参的key
@@ -71,7 +71,7 @@ public final class StringUtil
 
     /**
      * strToDouble:( 把页面传过来的参数转为Double默认为0 ). <br/>
-     * 
+     *
      * @author ZhaoBo
      * @param request
      * @param str:页面传参的key
@@ -90,7 +90,7 @@ public final class StringUtil
 
     /**
      * strToInt:( 把String转为INT 默认为1). <br/>
-     * 
+     *
      * @author ZhaoBo
      * @param str
      * @return INT：默认为1
@@ -107,7 +107,7 @@ public final class StringUtil
 
     /**
      * strToInt:( 把String转为INT默认为0 ). <br/>
-     * 
+     *
      * @author ZhaoBo
      * @param str
      * @return INT：默认为0
@@ -134,7 +134,7 @@ public final class StringUtil
 
     /**
      * 判断一个对象如果为null则返回空
-     * 
+     *
      * @param str
      * @return
      */
@@ -145,7 +145,7 @@ public final class StringUtil
 
     /**
      * Not null.
-     * 
+     *
      * @param obj the obj
      * @param stutas the stutas 是否严格校验 "null"字符串
      * @return the string
@@ -175,7 +175,7 @@ public final class StringUtil
         if (obj != null)
         {
             String str = obj.toString().trim();
-            return str.isEmpty() || "null".equals(str.toLowerCase());
+            return "".equals(str) || "null".equals(str.toLowerCase());
         } else
         {
             return true;
@@ -189,18 +189,18 @@ public final class StringUtil
 
     /**
      * Checks if is empty.
-     * 
+     *
      * @param str the str
      * @return true, if is empty
      */
     public static boolean isEmpty(Object str)
     {
-        return str == null || str.toString().isEmpty();
+        return str == null || "".equals(str.toString());
     }
 
     /**
      * Checks if is not empty.
-     * 
+     *
      * @param str the str
      * @return true, if is not empty
      */
@@ -213,7 +213,7 @@ public final class StringUtil
      * 方法定义：toBoolean<br>
      * 用途说明： 将字符串y|yes|true|1 转换成true否则false<br>
      * 例如：toBoolean("y") 返回true.
-     * 
+     *
      * @param theString 需要判断的字符串
      * @return boolean 返回布尔值true|false
      */
@@ -243,7 +243,7 @@ public final class StringUtil
 
     /**
      * 将字符串按指定加密类型加密支持MD5 SHA-1.
-     * 
+     *
      * @param data 需要Hash的字符串
      * @param type 加密类型 （"MD5" or "SHA-1"）
      * @return 返回的加密字串，SHA1是产生一个20字节的二进制数组
@@ -267,7 +267,7 @@ public final class StringUtil
 
     /**
      * 字符串不能为"" 或 null 如果是则返回异常.
-     * 
+     *
      * @param theString 需要断言的字符串
      * @param theMessage 是null或空白时,相应的错误提示信息
      * @throws IllegalArgumentException 是一个RuntimeException运行时异常不强制捕获异常，如果需要时可以主动捕获异常。
@@ -286,7 +286,7 @@ public final class StringUtil
 
     /**
      * 判断指定的String是否为一个Integer 整数.
-     * 
+     *
      * @param theString 需要断言的字符串
      * @param theMessage 不是number时,相应的错误提示信息
      * @return the int
@@ -308,7 +308,7 @@ public final class StringUtil
 
     /**
      * 获取字符32位字符串的UUID（唯一）.
-     * 
+     *
      * @return the UUID
      */
     public static String getUUID()
@@ -319,7 +319,7 @@ public final class StringUtil
 
     /**
      * 获取UUID的HashCode.
-     * 
+     *
      * @return the uUID hash code
      */
     public static long getUUIDHashCode()
@@ -329,7 +329,7 @@ public final class StringUtil
 
     /**
      * 获取Long型的UUID（唯一）.
-     * 
+     *
      * @return the UUID least bits
      */
     public static long getUUID2Long()
@@ -339,7 +339,7 @@ public final class StringUtil
 
     /**
      * 获取String型的UUID（唯一）.
-     * 
+     *
      * @return the UUID least bits
      */
     public static String getUUID2String()
@@ -349,7 +349,7 @@ public final class StringUtil
 
     /**
      * 判断指定的String是否为一个boolean.
-     * 
+     *
      * @param theString 需要断言的字符串
      * @param theMessage 不是boolean时,相应的错误提示信息
      * @throws IllegalArgumentException 如果表示boolean,则throw 此exception,
@@ -369,7 +369,7 @@ public final class StringUtil
     /**
      * 用于把Request para 的encoding <br>
      * 从缺省的ISO8859-5 转换为指定的Encoding.
-     * 
+     *
      * @param value the value
      * @param newEncoding , if = null, default set to "GBK"
      * @return 做过Encoding变换的String
@@ -396,7 +396,7 @@ public final class StringUtil
 
     /**
      * 字节数组转换为十六进制字符串.
-     * 
+     *
      * @param hash 需要转换的字节数组
      * @return 返回的十六进制字符串
      */
@@ -455,7 +455,7 @@ public final class StringUtil
 	 * <td>"&amp;nbsp;" </td>
 	 * </tr>
 	 * </table>.
-	 * 
+	 *
 	 * @param value
 	 *            目标字符串
 	 * @return 返回字符串
@@ -507,7 +507,7 @@ public final class StringUtil
 
     /**
      * 对目前的支持Word联动的HTML编辑器的Filter功能.
-     * 
+     *
      * @param value the value
      * @return String
      */
@@ -543,7 +543,7 @@ public final class StringUtil
 
     /**
      * 数字转换成字母.
-     * 
+     *
      * @param number the number
      * @param upperCaseFlag 大小写标示
      * @return java.lang.String
@@ -566,7 +566,7 @@ public final class StringUtil
 
     /**
      * 取得汉字拼音的首字母.
-     * 
+     *
      * @param strCn the str cn
      * @return the PY prefix
      */
@@ -593,7 +593,7 @@ public final class StringUtil
 
     /**
      * 字符串转换成整数.
-     * 
+     *
      * @param value the value
      * @return the integer
      */
@@ -617,7 +617,7 @@ public final class StringUtil
 
     /**
      * 字符串转换成长整数.
-     * 
+     *
      * @param value the value
      * @return the long
      */
@@ -641,8 +641,8 @@ public final class StringUtil
 
     /**
      * 字符串转换成长整数.
-     * 
-     * @param value the value
+     *
+     * @param
      * @return the long
      */
     public static void main(String args[])
@@ -651,7 +651,7 @@ public final class StringUtil
 
     /**
      * 字符串转换成小数.
-     * 
+     *
      * @param value the value
      * @return the big decimal
      */
@@ -675,7 +675,7 @@ public final class StringUtil
 
     /**
      * 字符串转换成短整数.
-     * 
+     *
      * @param value the value
      * @return the short
      */
@@ -699,7 +699,7 @@ public final class StringUtil
 
     /**
      * 字符串转换成短整数.
-     * 
+     *
      * @param value the value
      * @return the byte[]
      */
@@ -716,7 +716,7 @@ public final class StringUtil
 
     /**
      * To string.
-     * 
+     *
      * @param object object
      * @return string
      */
@@ -732,7 +732,7 @@ public final class StringUtil
 
     /**
      * 特殊字符转义.
-     * 
+     *
      * @param specialCharacters 包含特殊字符的字符串
      * @return 返回转义后的字符串
      */
@@ -744,7 +744,7 @@ public final class StringUtil
 
     /**
      * 处理字符串空值 nvl
-     * 
+     *
      * @param s
      * @return
      */
@@ -755,7 +755,7 @@ public final class StringUtil
 
     /**
      * 带默认值处理字符串空值 nvl
-     * 
+     *
      * @param s
      * @param defaultValue
      * @return
@@ -771,7 +771,7 @@ public final class StringUtil
 
     /**
      * 将NULL的OBJECT转化为字符串"&nbsp"
-     * 
+     *
      * @param obj
      * @return
      */
@@ -812,7 +812,7 @@ public final class StringUtil
         return retStr;
     }
 
-   
+
 
     public static String[] shortUrl(String url)
     {
@@ -850,7 +850,7 @@ public final class StringUtil
 
     /**
      * MD5加密(32位大写)
-     * 
+     *
      * @param src
      * @return
      */
@@ -905,7 +905,7 @@ public final class StringUtil
         }
         return result;
     }
-    
+
     public static String getQueryString(HttpServletRequest request) {
 		String queryString = "";
 		Map<String, String[]> params = request.getParameterMap();

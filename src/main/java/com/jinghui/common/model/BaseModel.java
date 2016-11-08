@@ -5,12 +5,12 @@ import java.util.Date;
 /**
  * Created by zenghuanghui on 2016/11/8.
  */
-public abstract class BaseMode {
+public abstract class BaseModel {
     private int id;
     private int createUser;
     private int updateUser;
-    private Date createDate;
-    private Date updateDate;
+    private Date createTime;
+    private Date updateTime;
     private String state;
     private String type;
 
@@ -38,20 +38,20 @@ public abstract class BaseMode {
         this.updateUser = updateUser;
     }
 
-    public Date getCreateDate() {
-        return createDate;
+    public Date getCreateTime() {
+        return createTime;
     }
 
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 
-    public Date getUpdateDate() {
-        return updateDate;
+    public Date getUpdateTime() {
+        return updateTime;
     }
 
-    public void setUpdateDate(Date updateDate) {
-        this.updateDate = updateDate;
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
 
     public String getState() {
