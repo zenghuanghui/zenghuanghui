@@ -25,4 +25,9 @@ public class UserController {
         request.setAttribute("lsUser",lsUser);
         return "User/userList";
     }
+
+    @RequestMapping("/index")
+    public String index(HttpServletRequest request){
+        return "index";
+    }
 }
