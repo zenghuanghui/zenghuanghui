@@ -30,4 +30,9 @@ public class UserController {
     public String index(HttpServletRequest request){
         return "index";
     }
+
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
+    }
 }
