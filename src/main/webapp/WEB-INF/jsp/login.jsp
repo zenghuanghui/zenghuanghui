@@ -17,11 +17,13 @@
 
     <link href="<%= path%>/inspinia/css/animate.css" rel="stylesheet">
     <link href="<%= path%>/inspinia/css/style.css" rel="stylesheet">
+    <script src="<%= path%>/inspinia/js/jquery-2.1.1.js"></script>
+    <script src="<%= path%>/js/common.js"></script>
 
 </head>
 
 <body class="gray-bg">
-
+<input type="hidden" id="cur_path" value="<%= path%>"/>
 <div class="loginColumns animated fadeInDown">
     <div class="row">
 
@@ -47,14 +49,14 @@
         </div>
         <div class="col-md-6">
             <div class="ibox-content">
-                <form class="m-t" role="form" action="index.html">
+                <form class="m-t" role="form" method="post" id="login_form">
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Username" required="">
+                        <input type="text" class="form-control" name="name" placeholder="Username" required="">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Password" required="">
+                        <input type="password" class="form-control" name="password" placeholder="Password" required="">
                     </div>
-                    <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+                    <button type="button" class="btn btn-primary block full-width m-b" onclick="login()">Login</button>
 
                     <a href="login_two_columns.html#">
                         <small>Forgot password?</small>

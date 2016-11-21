@@ -16,69 +16,66 @@
 <html>
 <head>
     <title>
-        <sitemesh:write property='title' /> - ltcms
+        京辉工作室<sitemesh:write property='title'/> -
     </title>
-    <head>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>INSPINIA | Dashboard</title>
+    <title>INSPINIA | Dashboard</title>
 
-        <link href="<%= path%>/inspinia/css/bootstrap.min.css" rel="stylesheet">
-        <link href="<%= path%>/inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="<%= path%>/inspinia/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<%= path%>/inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
 
-        <!-- Toastr style -->
-        <link href="<%= path%>/inspinia/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+    <!-- Toastr style -->
+    <link href="<%= path%>/inspinia/css/plugins/toastr/toastr.min.css" rel="stylesheet">
 
-        <!-- Gritter -->
-        <link href="<%= path%>/inspinia/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <!-- Gritter -->
+    <link href="<%= path%>/inspinia/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
 
-        <link href="<%= path%>/inspinia/css/animate.css" rel="stylesheet">
-        <link href="<%= path%>/inspinia/css/style.css" rel="stylesheet">
+    <link href="<%= path%>/inspinia/css/animate.css" rel="stylesheet">
+    <link href="<%= path%>/inspinia/css/style.css" rel="stylesheet">
 
-        <!-- Mainly scripts -->
-        <script src="<%= path%>/inspinia/js/jquery-2.1.1.js"></script>
-        <script src="<%= path%>/inspinia/js/bootstrap.min.js"></script>
-        <script src="<%= path%>/inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-        <script src="<%= path%>/inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- Mainly scripts -->
+    <script src="<%= path%>/inspinia/js/jquery-2.1.1.js"></script>
+    <script src="<%= path%>/inspinia/js/bootstrap.min.js"></script>
+    <script src="<%= path%>/inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="<%= path%>/inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-        <!-- Flot -->
-        <script src="<%= path%>/inspinia/js/plugins/flot/jquery.flot.js"></script>
-        <script src="<%= path%>/inspinia/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-        <script src="<%= path%>/inspinia/js/plugins/flot/jquery.flot.spline.js"></script>
-        <script src="<%= path%>/inspinia/js/plugins/flot/jquery.flot.resize.js"></script>
-        <script src="<%= path%>/inspinia/js/plugins/flot/jquery.flot.pie.js"></script>
+    <!-- Flot -->
+    <script src="<%= path%>/inspinia/js/plugins/flot/jquery.flot.js"></script>
+    <script src="<%= path%>/inspinia/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="<%= path%>/inspinia/js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="<%= path%>/inspinia/js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="<%= path%>/inspinia/js/plugins/flot/jquery.flot.pie.js"></script>
 
-        <!-- Peity -->
-        <script src="<%= path%>/inspinia/js/plugins/peity/jquery.peity.min.js"></script>
-        <script src="<%= path%>/inspinia/js/demo/peity-demo.js"></script>
+    <!-- Peity -->
+    <script src="<%= path%>/inspinia/js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="<%= path%>/inspinia/js/demo/peity-demo.js"></script>
 
-        <!-- Custom and plugin javascript -->
-        <script src="<%= path%>/inspinia/js/inspinia.js"></script>
-        <script src="<%= path%>/inspinia/js/plugins/pace/pace.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="<%= path%>/inspinia/js/inspinia.js"></script>
+    <script src="<%= path%>/inspinia/js/plugins/pace/pace.min.js"></script>
 
-        <!-- jQuery UI -->
-        <script src="<%= path%>/inspinia/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="<%= path%>/inspinia/js/plugins/jquery-ui/jquery-ui.min.js"></script>
 
-        <!-- GITTER -->
-        <script src="<%= path%>/inspinia/js/plugins/gritter/jquery.gritter.min.js"></script>
+    <!-- GITTER -->
+    <script src="<%= path%>/inspinia/js/plugins/gritter/jquery.gritter.min.js"></script>
 
-        <!-- Sparkline -->
-        <script src="<%= path%>/inspinia/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!-- Sparkline -->
+    <script src="<%= path%>/inspinia/js/plugins/sparkline/jquery.sparkline.min.js"></script>
 
-        <!-- Sparkline demo data  -->
-        <script src="<%= path%>/inspinia/js/demo/sparkline-demo.js"></script>
+    <!-- Sparkline demo data  -->
+    <script src="<%= path%>/inspinia/js/demo/sparkline-demo.js"></script>
 
-        <!-- ChartJS-->
-        <script src="<%= path%>/inspinia/js/plugins/chartJs/Chart.min.js"></script>
+    <!-- ChartJS-->
+    <script src="<%= path%>/inspinia/js/plugins/chartJs/Chart.min.js"></script>
 
-        <!-- Toastr -->
-        <script src="<%= path%>/inspinia/js/plugins/toastr/toastr.min.js"></script>
-
-    </head>
-    <sitemesh:write property='head' />
+    <!-- Toastr -->
+    <script src="<%= path%>/inspinia/js/plugins/toastr/toastr.min.js"></script>
+    <sitemesh:write property='head'/>
 </head>
 <body>
 <div id="wrapper">
@@ -87,11 +84,13 @@
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element"> <span>
-                            <img alt="image" class="img-circle" src="<%= path%>/inspinia/img/profile_small.jpg" />
+                            <img alt="image" class="img-circle" src="<%= path%>/inspinia/img/profile_small.jpg"/>
                              </span>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
-                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                            <span class="clear"> <span class="block m-t-xs"> <strong
+                                    class="font-bold">${sessionScope.user.userName}</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b
+                                    class="caret"></b></span> </span> </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
                             <li><a href="profile.html">Profile</a></li>
                             <li><a href="contacts.html">Contacts</a></li>
@@ -105,20 +104,23 @@
                     </div>
                 </li>
                 <li class="active">
-                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span
+                            class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li class="active"><a href="index.html">Dashboard v.1</a></li>
                         <li><a href="dashboard_2.html">Dashboard v.2</a></li>
                         <li><a href="dashboard_3.html">Dashboard v.3</a></li>
                         <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
-                        <li><a href="dashboard_5.html">Dashboard v.5 <span class="label label-primary pull-right">NEW</span></a></li>
+                        <li><a href="dashboard_5.html">Dashboard v.5 <span
+                                class="label label-primary pull-right">NEW</span></a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
                 </li>
                 <li>
-                    <a href="index.html#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
+                    <a href="index.html#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span
+                            class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="graph_flot.html">Flot Charts</a></li>
                         <li><a href="graph_morris.html">Morris.js Charts</a></li>
@@ -131,7 +133,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
+                    <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span
+                            class="label label-warning pull-right">16/24</span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="mailbox.html">Inbox</a></li>
                         <li><a href="mail_detail.html">Email view</a></li>
@@ -140,13 +143,14 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span>  </a>
+                    <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span> </a>
                 </li>
                 <li>
                     <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span></a>
                 </li>
                 <li>
-                    <a href="index.html#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
+                    <a href="index.html#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span
+                            class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="form_basic.html">Basic form</a></li>
                         <li><a href="form_advanced.html">Advanced Plugins</a></li>
@@ -157,7 +161,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index.html#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
+                    <a href="index.html#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span> <span
+                            class="pull-right label label-primary">SPECIAL</span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="contacts.html">Contacts</a></li>
                         <li><a href="profile.html">Profile</a></li>
@@ -181,7 +186,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index.html#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
+                    <a href="index.html#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span
+                            class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="search_results.html">Search results</a></li>
                         <li><a href="lockscreen.html">Lockscreen</a></li>
@@ -196,7 +202,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index.html#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span class="label label-info pull-right">NEW</span></a>
+                    <a href="index.html#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span
+                            class="label label-info pull-right">NEW</span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="toastr_notifications.html">Notification</a></li>
                         <li><a href="nestable_list.html">Nestable list</a></li>
@@ -223,11 +230,13 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index.html#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span></a>
+                    <a href="index.html#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span
+                            class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="typography.html">Typography</a></li>
                         <li><a href="icons.html">Icons</a></li>
-                        <li><a href="draggable_panels.html">Draggable Panels</a></li> <li><a href="resizeable_panels.html">Resizeable Panels</a></li>
+                        <li><a href="draggable_panels.html">Draggable Panels</a></li>
+                        <li><a href="resizeable_panels.html">Resizeable Panels</a></li>
                         <li><a href="buttons.html">Buttons</a></li>
                         <li><a href="video.html">Video</a></li>
                         <li><a href="tabs_panels.html">Panels</a></li>
@@ -241,7 +250,8 @@
                     <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a>
                 </li>
                 <li>
-                    <a href="index.html#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
+                    <a href="index.html#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span
+                            class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="table_basic.html">Static Tables</a></li>
                         <li><a href="table_data_tables.html">Data Tables</a></li>
@@ -250,7 +260,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index.html#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span class="fa arrow"></span></a>
+                    <a href="index.html#"><i class="fa fa-shopping-cart"></i> <span
+                            class="nav-label">E-commerce</span><span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="ecommerce_products_grid.html">Products grid</a></li>
                         <li><a href="ecommerce_product_list.html">Products list</a></li>
@@ -262,7 +273,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index.html#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span class="fa arrow"></span></a>
+                    <a href="index.html#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span
+                            class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="basic_gallery.html">Lightbox Gallery</a></li>
                         <li><a href="slick_carousel.html">Slick Carousel</a></li>
@@ -271,7 +283,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index.html#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
+                    <a href="index.html#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span
+                            class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li>
                             <a href="index.html#">Third Level <span class="fa arrow"></span></a>
@@ -296,10 +309,12 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span></a>
+                    <a href="css_animation.html"><i class="fa fa-magic"></i> <span
+                            class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span></a>
                 </li>
                 <li class="landing_link">
-                    <a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span> <span class="label label-warning pull-right">NEW</span></a>
+                    <a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span>
+                        <span class="label label-warning pull-right">NEW</span></a>
                 </li>
                 <li class="special_link">
                     <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">Package</span></a>
@@ -312,10 +327,12 @@
         <div class="row border-bottom">
             <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
-                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="index.html#"><i class="fa fa-bars"></i> </a>
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="index.html#"><i
+                            class="fa fa-bars"></i> </a>
                     <form role="search" class="navbar-form-custom" action="search_results.html">
                         <div class="form-group">
-                            <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                            <input type="text" placeholder="Search for something..." class="form-control"
+                                   name="top-search" id="top-search">
                         </div>
                     </form>
                 </div>
@@ -325,7 +342,7 @@
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
-                            <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                            <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
                         </a>
                         <ul class="dropdown-menu dropdown-messages">
                             <li>
@@ -335,7 +352,8 @@
                                     </a>
                                     <div class="media-body">
                                         <small class="pull-right">46h ago</small>
-                                        <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                        <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>.
+                                        <br>
                                         <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
                                     </div>
                                 </div>
@@ -348,7 +366,8 @@
                                     </a>
                                     <div class="media-body ">
                                         <small class="pull-right text-navy">5h ago</small>
-                                        <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                        <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica
+                                        Smith</strong>. <br>
                                         <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
                                     </div>
                                 </div>
@@ -378,7 +397,7 @@
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
-                            <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                            <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
                         </a>
                         <ul class="dropdown-menu dropdown-alerts">
                             <li>
@@ -505,11 +524,11 @@
                     <div class="row text-center">
                         <div class="col-lg-6">
                             <canvas id="polarChart" width="80" height="80"></canvas>
-                            <h5 >Kolter</h5>
+                            <h5>Kolter</h5>
                         </div>
                         <div class="col-lg-6">
                             <canvas id="doughnutChart" width="78" height="78"></canvas>
-                            <h5 >Maxtor</h5>
+                            <h5>Maxtor</h5>
                         </div>
                     </div>
                     <div class="m-t">
@@ -557,7 +576,8 @@
                                         </div>
                                         <h4>NYS report new data!
                                             <br/>
-                                            <small class="m-r"><a href="graph_flot.html"> Check the stock price! </a> </small>
+                                            <small class="m-r"><a href="graph_flot.html"> Check the stock price! </a>
+                                            </small>
                                         </h4>
                                     </div>
                                 </div>
@@ -586,31 +606,45 @@
                                 <div class="ibox-content no-padding">
                                     <ul class="list-group">
                                         <li class="list-group-item">
-                                            <p><a class="text-info" href="index.html#">@Alan Marry</a> I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minuts ago</small>
+                                            <p><a class="text-info" href="index.html#">@Alan Marry</a> I belive that.
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry.</p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minuts ago
+                                            </small>
                                         </li>
                                         <li class="list-group-item">
-                                            <p><a class="text-info" href="index.html#">@Stock Man</a> Check this stock chart. This price is crazy! </p>
+                                            <p><a class="text-info" href="index.html#">@Stock Man</a> Check this stock
+                                                chart. This price is crazy! </p>
                                             <div class="text-center m">
                                                 <span id="sparkline8"></span>
                                             </div>
-                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 hours ago</small>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 hours ago
+                                            </small>
                                         </li>
                                         <li class="list-group-item">
-                                            <p><a class="text-info" href="index.html#">@Kevin Smith</a> Lorem ipsum unknown printer took a galley </p>
-                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 minuts ago</small>
+                                            <p><a class="text-info" href="index.html#">@Kevin Smith</a> Lorem ipsum
+                                                unknown printer took a galley </p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 minuts ago
+                                            </small>
                                         </li>
                                         <li class="list-group-item ">
-                                            <p><a class="text-info" href="index.html#">@Jonathan Febrick</a> The standard chunk of Lorem Ipsum</p>
-                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 hour ago</small>
+                                            <p><a class="text-info" href="index.html#">@Jonathan Febrick</a> The
+                                                standard chunk of Lorem Ipsum</p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 hour ago
+                                            </small>
                                         </li>
                                         <li class="list-group-item">
-                                            <p><a class="text-info" href="index.html#">@Alan Marry</a> I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minuts ago</small>
+                                            <p><a class="text-info" href="index.html#">@Alan Marry</a> I belive that.
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry.</p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minuts ago
+                                            </small>
                                         </li>
                                         <li class="list-group-item">
-                                            <p><a class="text-info" href="index.html#">@Kevin Smith</a> Lorem ipsum unknown printer took a galley </p>
-                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 minuts ago</small>
+                                            <p><a class="text-info" href="index.html#">@Kevin Smith</a> Lorem ipsum
+                                                unknown printer took a galley </p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 minuts ago
+                                            </small>
                                         </li>
                                     </ul>
                                 </div>
@@ -631,7 +665,8 @@
 
                                             <div class="feed-element">
                                                 <a href="profile.html" class="pull-left">
-                                                    <img alt="image" class="img-circle" src="<%= path%>/inspinia/img/profile.jpg">
+                                                    <img alt="image" class="img-circle"
+                                                         src="<%= path%>/inspinia/img/profile.jpg">
                                                 </a>
                                                 <div class="media-body ">
                                                     <small class="pull-right">5m ago</small>
@@ -643,58 +678,72 @@
 
                                             <div class="feed-element">
                                                 <a href="profile.html" class="pull-left">
-                                                    <img alt="image" class="img-circle" src="<%= path%>/inspinia/img/a2.jpg">
+                                                    <img alt="image" class="img-circle"
+                                                         src="<%= path%>/inspinia/img/a2.jpg">
                                                 </a>
                                                 <div class="media-body ">
                                                     <small class="pull-right">2h ago</small>
-                                                    <strong>Mark Johnson</strong> posted message on <strong>Monica Smith</strong> site. <br>
+                                                    <strong>Mark Johnson</strong> posted message on <strong>Monica
+                                                    Smith</strong> site. <br>
                                                     <small class="text-muted">Today 2:10 pm - 12.06.2014</small>
                                                 </div>
                                             </div>
                                             <div class="feed-element">
                                                 <a href="profile.html" class="pull-left">
-                                                    <img alt="image" class="img-circle" src="<%= path%>/inspinia/img/a3.jpg">
+                                                    <img alt="image" class="img-circle"
+                                                         src="<%= path%>/inspinia/img/a3.jpg">
                                                 </a>
                                                 <div class="media-body ">
                                                     <small class="pull-right">2h ago</small>
-                                                    <strong>Janet Rosowski</strong> add 1 photo on <strong>Monica Smith</strong>. <br>
+                                                    <strong>Janet Rosowski</strong> add 1 photo on <strong>Monica
+                                                    Smith</strong>. <br>
                                                     <small class="text-muted">2 days ago at 8:30am</small>
                                                 </div>
                                             </div>
                                             <div class="feed-element">
                                                 <a href="profile.html" class="pull-left">
-                                                    <img alt="image" class="img-circle" src="<%= path%>/inspinia/img/a4.jpg">
+                                                    <img alt="image" class="img-circle"
+                                                         src="<%= path%>/inspinia/img/a4.jpg">
                                                 </a>
                                                 <div class="media-body ">
                                                     <small class="pull-right text-navy">5h ago</small>
-                                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica
+                                                    Smith</strong>. <br>
                                                     <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
                                                     <div class="actions">
-                                                        <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
+                                                        <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i>
+                                                            Like </a>
                                                         <a class="btn btn-xs btn-white"><i class="fa fa-heart"></i> Love</a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="feed-element">
                                                 <a href="profile.html" class="pull-left">
-                                                    <img alt="image" class="img-circle" src="<%= path%>/inspinia/img/a5.jpg">
+                                                    <img alt="image" class="img-circle"
+                                                         src="<%= path%>/inspinia/img/a5.jpg">
                                                 </a>
                                                 <div class="media-body ">
                                                     <small class="pull-right">2h ago</small>
-                                                    <strong>Kim Smith</strong> posted message on <strong>Monica Smith</strong> site. <br>
+                                                    <strong>Kim Smith</strong> posted message on <strong>Monica
+                                                    Smith</strong> site. <br>
                                                     <small class="text-muted">Yesterday 5:20 pm - 12.06.2014</small>
                                                     <div class="well">
-                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                                        Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry. Lorem Ipsum has been the industry's standard dummy
+                                                        text ever since the 1500s.
+                                                        Over the years, sometimes by accident, sometimes on purpose
+                                                        (injected humour and the like).
                                                     </div>
                                                     <div class="pull-right">
-                                                        <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
+                                                        <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i>
+                                                            Like </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="feed-element">
                                                 <a href="profile.html" class="pull-left">
-                                                    <img alt="image" class="img-circle" src="<%= path%>/inspinia/img/profile.jpg">
+                                                    <img alt="image" class="img-circle"
+                                                         src="<%= path%>/inspinia/img/profile.jpg">
                                                 </a>
                                                 <div class="media-body ">
                                                     <small class="pull-right">23h ago</small>
@@ -704,17 +753,21 @@
                                             </div>
                                             <div class="feed-element">
                                                 <a href="profile.html" class="pull-left">
-                                                    <img alt="image" class="img-circle" src="<%= path%>/inspinia/img/a7.jpg">
+                                                    <img alt="image" class="img-circle"
+                                                         src="<%= path%>/inspinia/img/a7.jpg">
                                                 </a>
                                                 <div class="media-body ">
                                                     <small class="pull-right">46h ago</small>
-                                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                                    <strong>Mike Loreipsum</strong> started following <strong>Monica
+                                                    Smith</strong>. <br>
                                                     <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <button class="btn btn-primary btn-block m-t"><i class="fa fa-arrow-down"></i> Show More</button>
+                                        <button class="btn btn-primary btn-block m-t"><i class="fa fa-arrow-down"></i>
+                                            Show More
+                                        </button>
 
                                     </div>
 
@@ -746,7 +799,9 @@
                                 </div>
                                 <div class="ibox-content ibox-heading">
                                     <h3>You have meeting today!</h3>
-                                    <small><i class="fa fa-map-marker"></i> Meeting is on 6:00am. Check your schedule to see detail.</small>
+                                    <small><i class="fa fa-map-marker"></i> Meeting is on 6:00am. Check your schedule to
+                                        see detail.
+                                    </small>
                                 </div>
                                 <div class="ibox-content inspinia-timeline">
 
@@ -761,10 +816,13 @@
                                             <div class="col-xs-7 content no-top-border">
                                                 <p class="m-b-xs"><strong>Meeting</strong></p>
 
-                                                <p>Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the
+                                                <p>Conference on the sales results for the previous year. Monica please
+                                                    examine sales trends in marketing and products. Below please find
+                                                    the current status of the
                                                     sale.</p>
 
-                                                <p><span data-diameter="40" class="updating-chart">5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,4,7,3,2,9,8,7,4,5,1,2,9,5,4,7,2,7,7,3,5,2</span></p>
+                                                <p><span data-diameter="40" class="updating-chart">5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,4,7,3,2,9,8,7,4,5,1,2,9,5,4,7,2,7,7,3,5,2</span>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -778,7 +836,9 @@
                                             </div>
                                             <div class="col-xs-7 content">
                                                 <p class="m-b-xs"><strong>Send documents to Mike</strong></p>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem Ipsum has been the industry's standard dummy text
+                                                    ever since.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -793,7 +853,8 @@
                                                 <p class="m-b-xs"><strong>Coffee Break</strong></p>
                                                 <p>
                                                     Go to shop and find some products.
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem Ipsum has been the industry's.
                                                 </p>
                                             </div>
                                         </div>
@@ -841,7 +902,9 @@
                                             <div class="col-xs-7 content">
                                                 <p class="m-b-xs"><strong>Chat with Monica and Sandra</strong></p>
                                                 <p>
-                                                    Web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                    Web sites still in their infancy. Various versions have evolved over
+                                                    the years, sometimes by accident, sometimes on purpose (injected
+                                                    humour and the like).
                                                 </p>
                                             </div>
                                         </div>

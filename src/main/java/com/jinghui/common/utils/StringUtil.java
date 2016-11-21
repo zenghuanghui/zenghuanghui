@@ -1,5 +1,6 @@
 package com.jinghui.common.utils;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.net.URLEncoder;
@@ -8,8 +9,6 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.regex.Pattern;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * 字符串公用操作.
@@ -920,4 +919,5 @@ public final class StringUtil
 			queryString = queryString.substring(0, queryString.length() - 1);
 		return queryString;
 	}
+
 }

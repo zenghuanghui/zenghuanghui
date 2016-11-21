@@ -20,4 +20,8 @@ public class UserService implements IUserService {
     public List<User> selectUserList() {
         return userMapper.selectUserList();
     }
+
+    public User selectUser(User user) {
+        return userMapper.selectUser(user);
+    }
 }
